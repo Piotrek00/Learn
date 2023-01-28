@@ -31,13 +31,29 @@ let person = {
     personName: 'Piotr',
     personSurname: 'Kotarba',
     personAge: 29,
-    town: 'Rytro',
-    postalCode: 33-343,
-    country: 'Poland',
-
+    adress: {
+        town: 'Rytro',
+        postalCode: 33-343,
+        country: 'Poland',
+    },
     getName: function(){
         console.log('Dane uzytkownika: ', this.personName + ' ', this.personSurname)
+    },
+    getAdress: function(){
+        console.log(person.adress);
     }
 }
 
 person.getName();
+person.getAdress();
+
+function getNewPerson(personName, personSurname, personAge){
+        return {
+            name: personName,
+            surname: personSurname,
+            age: personAge
+        }
+    }
+
+    const user = getNewPerson('Ania', 'Kowalska', 29);
+    console.log(user)
