@@ -5,15 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kurs JAVA SCRIPT</title>
+    <style>
+        #calc {
+            display: grid;
+            grid-template-columns: auto auto;
+            max-width: 400px;
+            gap: 10px;
+            text-align: right;
+        }
+    </style>
 </head>
 <body style="background-color:rgb(128, 128, 128)">
    
-<div id="content">
+<div id="calc">
+    <label for="">Kapitał :</label> <input type="text" id="capital" value="1000">
+    <label for="">Oprocentowanie :</label> <input type="text" id="rate" value="0.04">
+    <label for="">Kapitalizacja co :</label> <input type="text" id="n" value="12">
+    <label for="">Na ile lat lokata :</label> <input type="text" id="t" value="5">
 
     
 </div>
 
-    <script src="ex9.js"></script>
+    <script src="ex10.js"></script>
     
 </body>
 </html>
