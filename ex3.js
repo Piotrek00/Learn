@@ -9,7 +9,6 @@
 
 // console.log('Koniec pętli');
 
-
 //  let a = 0;
 
 //  do {
@@ -26,10 +25,8 @@
 //  }
 
 for (let a = -2; a <= 2; a++) {
-    console.log('Wartość liczby to: ', a);
-    if (a < 0) {
-        console.log('Liczba mniejsza od 0')        
-    }
-    else console.log('Liczba większa od 0');
-
+  console.log("Wartość liczby to: ", a);
+  if (a < 0) {
+    console.log("Liczba mniejsza od 0");
+  } else console.log("Liczba większa od 0");
 }
