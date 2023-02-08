@@ -25,3 +25,6 @@ console.log(typeof { a: 5 }); // object
 console.log(typeof [0]); // object
 console.log(typeof null); // OBJECT !!!!!!!!
 console.log(typeof undefined); // undefined
+console.log(typeof function () {}); // function
+console.log(typeof Symbol()); // symbol
+console.log(typeof 1n); // bigint
