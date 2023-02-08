@@ -18,3 +18,14 @@ console.log(Number.MIN_SAFE_INTEGER); // najwieksza max i najmniejsza min liczba
 
 console.log(Number.isSafeInteger(9007199254740991)); // true
 console.log(Number.isSafeInteger(90071992547409912)); // false
+
+// NaN -- Not a Number : specialna wartosc okreslajaca ze cos nie jest liczbą
+
+const someNaN = 0 / 0;
+console.log(someNaN);
+console.log(Math.sqrt(-1)); // pierwiastek 2
+
+// Konwersja znakow na liczbę
+
+let someNum = parseInt("12.4567");
+console.log(someNum); // Liczba całkowita
