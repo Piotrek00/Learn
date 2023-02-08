@@ -28,15 +28,16 @@ function calculateFinal(capital, rate, n, t) {
 }
 
 document.getElementById("calculate").addEventListener("click", function () {
-  let capital = inputCapital;
-  let rate = inputRate;
-  let n = inputN;
-  let t = inputT;
+  let capital = inputCapital.value;
+  let rate = inputRate.value;
+  let n = inputN.value;
+  let t = inputT.value;
 
   let result = calculateFinal(capital, rate, n, t);
-  result = resultValue;
+
+  resultValue.value = result.toFixed(2);
 });
 
-console.log(finalMoney);
-console.log(Math.floor(finalMoney)); // zaokraglenie do dołu
-console.log(Math.ceil(finalMoney)); // zaokraglenie do góry
+// console.log(finalMoney);
+// console.log(Math.floor(finalMoney)); // zaokraglenie do dołu
+// console.log(Math.ceil(finalMoney)); // zaokraglenie do góry
