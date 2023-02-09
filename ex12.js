@@ -29,3 +29,6 @@ console.log(Math.sqrt(-1)); // pierwiastek 2
 
 let someNum = parseInt("12.4567");
 console.log(someNum); // Liczba całkowita
+
+console.log(isNaN(0 / 0));
+console.log(Number.isNaN(55));
